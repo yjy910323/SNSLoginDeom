@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="entity">
+	<class name="Account" table="account">
+		<id name="id" type="java.lang.Integer">
+			<column name="id"/>
+			<generator class="identity"/>
+		</id>
+		<property name="doubanid" type="java.lang.String">
+			<column length="20" name="doubanid" not-null="false"/>
+		</property>
+		<property name="doubanToken" type="java.lang.String">
+			<column length="150" name="doubanToken" not-null="false"/>
+		</property>
+		<property name="taobaoid" type="java.lang.String">
+			<column length="20" name="taobaoid" not-null="false"/>
+		</property>
+		<property name="taobaoToken" type="java.lang.String">
+			<column length="150" name="taobaoToken" not-null="false"/>
+		</property>
+		<property name="nwbid" type="java.lang.String">
+			<column length="20" name="nwbid" not-null="false"/>
+		</property>
+		<property name="nwbToken" type="java.lang.String">
+			<column length="150" name="nwbToken" not-null="false"/>
+		</property>
+		<property name="qwbid" type="java.lang.String">
+			<column length="20" name="qwbid" not-null="false"/>
+		</property>
+		<property name="qwbToken" type="java.lang.String">
+			<column length="150" name="qwbToken" not-null="false"/>
+		</property>
+		<property name="weiboid" type="java.lang.String">
+			<column length="20" name="weiboid" not-null="false"/>
+		</property>
+		<property name="weiboToken" type="java.lang.String">
+			<column length="150" name="weiboToken" not-null="false"/>
+		</property>
+		<property name="baiduid" type="java.lang.String">
+			<column length="20" name="baiduid" not-null="false"/>
+		</property>
+		<property name="baiduToken" type="java.lang.String">
+			<column length="150" name="baiduToken" not-null="false"/>
+		</property>
+		<property name="kaixinid" type="java.lang.String">
+			<column length="20" name="kaixinid" not-null="false"/>
+		</property>
+		<property name="kaixinToken" type="java.lang.String">
+			<column length="150" name="kaixinToken" not-null="false"/>
+		</property>
+		<property name="renrenid" type="java.lang.String">
+			<column length="20" name="renrenid" not-null="false"/>
+		</property>
+		<property name="renrenToken" type="java.lang.String">
+			<column length="150" name="renrenToken" not-null="false"/>
+		</property>
+	</class>
+</hibernate-mapping>
